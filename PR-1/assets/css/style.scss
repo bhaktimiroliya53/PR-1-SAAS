@@ -1,0 +1,230 @@
+$primary-color: #011920;
+$orange-color: #ff8700;
+$white-color: #fff;
+$black-color: #000;
+$opacity: #ff880097;
+$secondery-color: #353535;
+.justify-center{
+	justify-content:center;
+}
+.align-center{
+	align-items:center;
+}
+header{
+    background-color: $primary-color;
+    padding: 20px 10px;
+    .menu{ position:relative; 
+	ul{
+		li{ padding: 0 30px; 
+			a{ color: $white-color; font-size: 18px; } 
+			i{ padding: 0 5px; } 
+		ul.dropdown1{position:absolute;background-color:$white-color;width:200px;padding:10px;top:90px;opacity:0;visiblity:hidden;
+		transition:all 0.5s;
+			li{padding:10px;
+				a{
+					color:$black-color;
+					font-size:15px;
+					transition:all 0.5s;
+				}
+				a:hover{color:$orange-color;}
+			}
+		}
+		} 
+		li:hover ul.dropdown1{opacity:1;top:50px;visiblity:visible;}		
+	} 
+	} 
+}
+// banner
+.bg-img{
+    background-image: url(../img/bg-1.jpg); background-repeat: no-repeat; background-size: cover; padding: 100px;
+}
+.banner{
+    padding-top: 170px; line-height: 100px;
+    h5{ color: $orange-color; font-size: 30px;}
+    h1{ color: $white-color; font-size: 65px;}
+    p{ color: $white-color; font-size: 20px;
+        span{ color: $orange-color; text-decoration: underline;}
+    }
+    button{
+        width: 180px; height: 60px; font-size: 24px; border: 1px solid $white-color; background-color: transparent; 
+        color: $white-color; transition: all 0.7s;
+    }
+    button:hover{
+        background-color: $orange-color; border: none;
+    }
+}
+// section-1
+.bg-img-1{
+    background-image: url(../img/bg-2.jpg); background-repeat: no-repeat; background-size: cover; padding: 100px;
+}
+.box-50{
+    padding: 50px 0;
+    .cantant{ 
+        padding: 0 100px;
+        h5{ color: $orange-color; font-size: 25px; padding-bottom: 30px;}
+        h2{ color: $white-color; font-size: 40px; line-height: 45px; padding-bottom: 40px;}
+        p{ color: $white-color; font-size: 18px; line-height: 25px; padding-bottom: 30px;}
+        h6{ color: $white-color; font-size: 20px ; span{ color: $orange-color; text-decoration: underline;} }
+        .button{ width: 180px; height: 60px; font-size: 20px; border: 1px solid $white-color; background-color: transparent; transition: all 0.7s; margin-top: 50px;
+            a{ color: $white-color; } }
+        .button:hover{ background-color: $orange-color; border: none; }
+    }
+    .img-1{ padding-right: 30px; }  
+}
+// section-2
+.bg-img-2{
+    background-image: url(../img/bg-5.jpg); background-repeat: no-repeat; background-size: cover;
+}
+.qulity{
+    padding: 60px 30px;
+    width: 50%;
+    .qulity-cantant{ h5{ color: $orange-color; font-size: 22px; padding: 30px 0;}
+        h2{ color: $white-color; font-size: 40px; line-height: 45px;}
+        img{ padding: 30px;} }
+    .qulity-passionate{ h5{ color: $white-color;  font-size: 20px; padding: 30px 0 10px;}
+        p{ color: $white-color;  font-size: 20px; padding-bottom: 30px;}}
+    .qulity-img{ width: 50%;}
+}
+// section-3
+.bg-img-3{
+    background-image: url(../img/bg-4.jpg); background-repeat: no-repeat; background-size: cover;
+}
+.event{
+    position: relative;
+    .event-cantant{ position: absolute; left: 22%; top: 20%; h5{ color: $orange-color; font-size: 25px; padding-bottom: 30px;}
+        h2{ color: $white-color; font-size: 40px; line-height: 45px; padding-bottom: 40px;}
+        h6{ color: $white-color; font-size: 20px ; span{ color: $orange-color; text-decoration: underline;} }
+    }
+    .event-list{position: absolute; left: 23%; bottom: 25%; margin-bottom: 20px; p{ color: $white-color;padding-bottom: 15px; font-size: 25px;}
+        ul{ 
+            li{ 
+                color: $white-color; padding: 10px; font-size: 18px;
+            }
+        }
+        .button{position: absolute; left: 0%; bottom: -50%;  width: 180px; height: 60px; font-size: 20px; border: 1px solid $white-color; background-color: transparent; 
+            transition: all 0.7s; margin-top: 50px;
+            a{ color: $white-color; } }
+        .button:hover{ background-color: $orange-color; border: none; }
+    }
+}
+// section-4
+.bg-img-4{
+    background-image: url(../img/bg-2.jpg); background-repeat: no-repeat; background-size: cover;
+}
+.review-menu{ 
+    margin: 100px auto 50px; width: 100%;
+    h5{ color: $orange-color; font-size: 25px; padding-bottom: 15px;}
+    h2{ color: $white-color; font-size: 40px; line-height: 45px; padding-bottom: 15px;}
+}
+.review-box{
+    width: calc(50% - 40px); margin: 20px; margin-bottom: 100px; background-color: $primary-color; position: relative;
+    i{ color: $white-color;  font-size: 40px; position: absolute; top: 10px; right: 15px;}
+    p{ color: $white-color;  font-size: 20px; padding: 50px 90px 30px 30px;}
+    .review-name{ 
+        position: relative;
+        h6{ color: $orange-color;  font-size: 16px; padding: 0 20px 10px;} 
+    span{ color: $white-color; font-size: 12px; display: inline-block; padding-bottom: 20px; padding-left: 20px;}
+    img{ width: 20%;border-radius: 100%; position: absolute; bottom: 0; right: 0;}
+}
+}
+// section-5
+.blog-menu{
+    margin: 100px auto 50px; width: 100%;
+    h5{ color: $orange-color; font-size: 25px; padding-bottom: 30px;}
+    h2{ color: $white-color; font-size: 40px; line-height: 45px; padding-bottom: 40px;}
+}
+.blog-box{
+    width: calc(33.3333% - 40px); margin: 20px; margin-bottom: 100px; background-color: $primary-color;
+    .blog-img{ overflow: hidden; 
+        img{transform:scale(1); transition: all 1s;}}
+    .blog-img img:hover{ transform: scale(1.2);}
+    .blog-contant{
+        padding: 20px 0;
+        h6{ color: $orange-color; font-size: 16px; word-spacing: 3px;
+        a{ padding: 8px; color: $orange-color; transition: all 0.5s;}
+        a:hover{ color: $opacity;}
+        }
+        p{ padding: 25px 0;a{ color: $white-color; font-size: 25px; line-height: 25px;}}
+        span{
+            a{ padding: 8px; color: $white-color; transition: all 0.5s;}
+            a:hover{ color: $orange-color;}
+        }
+    }
+}
+// section-6
+.subscribe{
+    .subscribe-contant{
+        margin: 100px auto;
+        h5{ color: $orange-color; font-size: 25px; padding-bottom: 20px;}
+        h3{ color: $white-color; font-size: 40px; padding-bottom: 20px;}
+        p{ color: $white-color; font-size: 20px; padding-bottom: 30px;}
+        .subscribe-input{
+            padding-bottom: 50px;
+            input{ width: 100%; height: 50px; background-color: $primary-color; border: 1px solid $white-color; padding: 20px;}
+            .input-1{ width: 40%; height: 50px; background-color: $white-color; font-size: 18px; text-align: center; padding: 0; transition: all 0.4s;}
+            .input-1:hover{ background-color: $orange-color; color: $white-color; border: none;}
+        }
+        h6{ color: $white-color; font-size: 20px ; span{ color: $orange-color; text-decoration: underline;} }
+    }
+}
+// footer
+.bg-img-5{
+    background-image: url(../img/bg-6.jpg); background-repeat: no-repeat; background-size: cover;
+}
+.footer{
+    padding: 100px 0;
+   .footer-menu{
+        width: 30%; margin-right: 150px;
+        img{ padding-bottom: 20px;}
+        p{ color: $white-color; font-size: 14px; line-height: 18px;}
+        ul{
+            margin: 20px 0 40px;
+            li{ width: 30px; height: 30px; color: $white-color; border-radius: 100%; 
+               border: 1px solid $white-color; text-align: center; line-height: 30px; margin: 0 3px;
+            }
+            li:hover{ color: $orange-color; background-color: $white-color ;}
+        }
+        span{ color: $white-color;}
+   }
+   .footer-list{
+    width: calc(33.33333% - 40px); margin: 0 30px;
+    h3{ color: $white-color; padding-bottom: 25px; font-size: 25px;}
+    ul{
+        li{
+            padding-bottom: 20px;
+            a{ color: $white-color;}
+            a:hover{ color: $orange-color;}
+        }
+    }
+   }
+}
+.banner-section1{
+	padding-top:300px;
+	background-image:url(../img/book.jpg);
+	height:80vh;
+	background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	position:relative;
+	z-index:-3;
+	.info{
+		h2{
+			color:$white-color;
+			font-size:48px;
+			text-align:center;
+		}
+		h4{
+			color:$orange-color;
+			font-size:20px;
+			padding:20px 0;
+			text-align:center;
+		}
+	}
+}
+.blog-2{
+	padding:100px 0;
+	background-image:url(../img/blog.jpg);
+	background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
